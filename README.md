@@ -35,17 +35,17 @@ As shown in the above code, `py` is used as **filetype**, and `example` is used 
 ***
 there are four methods in this package:
 
-1) **save_data:** It creates a new file, but it cannot upload the data inside that file and throws an error when the file already exists. There is a single attribute for this method `filename`.
+1) **save_data:** It creates a new file but cannot upload the data inside that file and throws an error when the file already exists. There is a single attribute for this method `filename`.
    
-2) **load_data:** It opens a pre-made file and if the file doesn't exist, it throws an error and if everything is fine it returns the data written in that file. There is a single attribute for this method `filename`.
+2) **load_data:** It opens a pre-made file; if the file doesn't exist, it throws an error and returns the data written in that file if everything is fine. There is a single attribute for this method `filename`.
 
-3) **update_data:** It opens a pre-made file and updates the text in that file and if the file doesn't exist, it throws an error. There are two attributes for this method `filename` and `value`.
+3) **update_data:** It opens a pre-made file and updates the text in that file and if the file doesn't exist, it throws an error. There are two attributes for this method: `filename` and `value`.
    
 4) **delete_data:** It opens a pre-made file and deletes it and if the file doesn't exist, it throws an error. There is a single attribute for this method `filename`.
 
 ## More Examples
 ***
-there is another example in front of you which shows the working of whole package:
+there is another example in front of you that shows the workings of the whole package:
 ``` python
 import LocalDataStoragePython as m
 
@@ -63,11 +63,11 @@ Enter something:hello world
 You Wrote: hello world
 
 ```
-As we can see that `update_data()` method can also be used to create a file if it does'nt exists and give values.
+As we can see the `update_data()` method can also be used to create a file if it doesn't exist and give values.
 
 ## Be a Member
 ***
-you can become our member by reporting us bugs or faults you find in this package, we will give our best to solve that bug and make this package comfortable for you.
+you can become a member by reporting bugs or faults you find in this package, we will do our best to solve that bug and make this package comfortable for you.
 
 ## License
 ***
