@@ -19,7 +19,7 @@ Type this code in the terminal to install this package `pip install LocalDataSto
 ***
 Here is an example of this Python package:
 ``` python
-import LocalDataStoragePython as m
+import LocalDataStorage as m
 
 obj = m.LocalDataStore("py")
 obj.save_data("example")
@@ -47,7 +47,7 @@ there are four methods in this package:
 ***
 there is another example in front of you that shows the workings of the whole package:
 ``` python
-import LocalDataStoragePython as m
+import LocalDataStorage as m
 
 obj = m.LocalDataStore("txt")
 
