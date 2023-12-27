@@ -61,7 +61,6 @@ Output:
 ```
 Enter something:hello world
 You Wrote: hello world
-
 ```
 As we can see the `update_data()` method can also be used to create a file if it doesn't exist and give values.
 
