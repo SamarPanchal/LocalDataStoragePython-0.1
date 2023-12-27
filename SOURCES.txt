@@ -1,7 +1,0 @@
-LICENSE.txt
-setup.py
-LocalDataStoragePython/__init__.py
-LocalDataStoragePython.egg-info/PKG-INFO
-LocalDataStoragePython.egg-info/SOURCES.txt
-LocalDataStoragePython.egg-info/dependency_links.txt
-LocalDataStoragePython.egg-info/top_level.txt
