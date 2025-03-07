@@ -19,15 +19,21 @@ Type this code in the terminal to install this package `pip install LocalDataSto
 ***
 Here is an example of this Python package:
 ``` python
-import LocalDataStorage as m
+import LocalDataStorage
 
-obj = m.LocalDataStore("py")
-obj.save_data("example")
+content = 'If laziness was an Olympic sport, I’d come in second just so I wouldn’t have to stand up for the gold medal.'  # just random text
+
+storage_txt = LocalDataStorage.LocalDataStore(
+    '.txt')  # initiate the LocalDataStore class and pass 'file_type' as the perimeter.
+file = storage_txt.update_data('text file', content)  # creates and adds content to the file.
+
+print(storage_txt.value)  # prints the content
+
 
 ```
 Output:
 ```
-example.py
+If laziness was an Olympic sport, I’d come in second just so I wouldn’t have to stand up for the gold medal.
 ```
 As shown in the above code, `py` is used as **filetype**, and `example` is used as **filename**.
 
@@ -39,7 +45,7 @@ there are four methods in this package:
    
 2) **load_data:** It opens a pre-made file; if the file doesn't exist, it throws an error and returns the data written in that file if everything is fine. There is a single attribute for this method `filename`.
 
-3) **update_data:** It opens a pre-made file and updates the text in that file and if the file doesn't exist, it throws an error. There are two attributes for this method: `filename` and `value`.
+3) **update_data:** It creates a new file file and updates the text in that file and if the file doesn't exist, it throws an error. There are two attributes for this method: `filename` and `value`.
    
 4) **delete_data:** It opens a pre-made file and deletes it and if the file doesn't exist, it throws an error. There is a single attribute for this method `filename`.
 
@@ -47,13 +53,15 @@ there are four methods in this package:
 ***
 there is another example in front of you that shows the workings of the whole package:
 ``` python
-import LocalDataStorage as m
+import LocalDataStorage
 
-obj = m.LocalDataStore("txt")
+storage_txt = LocalDataStorage.LocalDataStore(
+    '.txt')  # initiate the LocalDataStore class and pass 'file_type' as perimeter.
 
 value = input("Enter something:")
-obj.update_data("example2", value)
-print("You Wrote:", obj.load_data("example2"))
+file = storage_txt.update_data('text file', value)  # creates and adds content to the file.
+
+print("You Wrote:", storage_txt.load_data('text file'))  # fetch data from file and prints it
 
 ```
 Output:
